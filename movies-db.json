@@ -1,0 +1,35 @@
+[
+  {
+    "id": "id-test1",
+    "rank": "0",
+    "title": "The mock movie",
+    "fullTitle": "The mock movie of the year",
+    "year": "2022",
+    "image": "",
+    "crew": "test crew",
+    "imDbRating": "11.0",
+    "imDbRatingCount": "2147483647"
+  },
+  {
+    "id": "id-test2",
+    "rank": "0",
+    "title": "The mock movie2",
+    "fullTitle": "The mock movie of the year2",
+    "year": "2022",
+    "image": "",
+    "crew": "test crew",
+    "imDbRating": "11.0",
+    "imDbRatingCount": "2147483647"
+  },
+  {
+    "id": "id-test3",
+    "rank": "0",
+    "title": "The mock movie3",
+    "fullTitle": "The mock movie of the year3",
+    "year": "2022",
+    "image": "",
+    "crew": "test crew",
+    "imDbRating": "11.0",
+    "imDbRatingCount": "2147483647"
+  }
+]

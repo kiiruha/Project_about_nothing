@@ -1,0 +1,52 @@
+syntax = "proto3";
+import "google/protobuf/any.proto";
+
+option csharp_namespace = "ProtoDefinitions";
+
+package movies;
+
+service MoviesApi {
+  rpc GetById (IdRequest) returns (responseModel);
+  rpc Search (SearchRequest) returns (responseModel);
+  rpc GetAll (Empty) returns (responseModel);
+
+}
+
+message Empty {
+
+}
+
+message IdRequest {
+  string Id = 1;
+}
+
+message SearchRequest {
+  string text = 1;
+}
+
+message moviesApiException {
+  string Message = 1;
+  int32 StatusCode = 2;
+}
+
+message responseModel {
+  bool success = 1;
+  google.protobuf.Any data  = 2;
+  repeated moviesApiException exceptions = 3;
+}
+
+message showResponse {
+  string id  = 1;
+  string rank  = 2;
+  string title  = 3;
+  string fullTitle  = 4;
+  string year  = 5;
+  string image  = 6;
+  string crew  = 7;
+  string imDbRating  = 8;
+  string imDbRatingCount  = 9;
+}
+
+message showListResponse {
+  repeated showResponse shows = 1;
+}
